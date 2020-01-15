@@ -4,7 +4,7 @@
  * @param {Request} req
  * @returns {Stream}
  */
-module.exports = function(nextStream) {
+module.exports = function() {
 
     function getClientIp(req) {
         try {

@@ -1,10 +1,9 @@
-
 /**
  *
  * 排除 _ 开头的参数
  * @returns {Stream}
  */
-module.exports = function (nextStream) {
+module.exports = function () {
     return {
         process : function (data){
             data.data.forEach(function (value){
@@ -14,8 +13,6 @@ module.exports = function (nextStream) {
                     }
                 }
             })
-
-
         }
     }
 };
